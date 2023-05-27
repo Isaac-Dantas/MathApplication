@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" 
+    href="./1683133438672.ico" 
+    type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathApplication</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page" class="flex">
+      <div>
+        <header>
+          <img src="./1683133438672.png" alt="" class="img"/>
+        </header>
+        <main>
+          <div class="headline">
+            <h1>Acesse a plataforma</h1>
+            <p>
+              Faça login para começar a estudar <span>matemática</span>
+              ainda hoje.
+            </p>
+          </div>
+          <form method="POST">
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                required
+                placeholder="Digite seu e-mail"
+              />
+            </div>
+
+              <input
+                type="password"
+                id="senha"
+                placeholder="Digite sua senha"
+                name="senha"
+              />
+            <button>
+            <a href="./index2.html">Entrar</a>
+            </button>
+
+          </form>
+        </main>
+      </div>
+      <img src="./bg.jpg" alt="" />
+    </div>
+    <script>
+      function togglePassword() {
+        document
+          .querySelectorAll(".eye")
+          .forEach((eye) => eye.classList.toggle("hide"))
+
+        const type =
+          senha.getAttribute("type") == "password" ? "text" : "password"
+
+        senha.setAttribute("type", type)
+      }
+    </script>
+  </body>
+</html>
